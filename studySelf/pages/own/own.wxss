@@ -1,1 +1,17 @@
 /* pages/own/own.wxss */
+
+.own_userInfo {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#ff5129, #ff9235);
+  padding: 60rpx 0;
+  text-align: center;
+}
+
+.userinfo-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: solid 2px white;
+}

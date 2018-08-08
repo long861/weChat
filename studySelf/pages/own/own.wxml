@@ -1,5 +1,12 @@
 <!--pages/own/own.wxml-->
 <view class='own_wrap'>
+<view>
+     <view class='own_userInfo'>
+     <!-- <i-avatar src="{{userInfo.avatarUrl}}" size="large"></i-avatar> -->
+      <image src='{{userInfo.avatarUrl}}' class="userinfo-avatar"></image>
+      <view class='userName'>{{userInfo.nickName}}</view>
+    </view>
+  </view>
   <i-panel  class="cell-panel-demo">
     <i-cell-group>
         <i-cell title="个人信息" is-link url="./ownInfo"></i-cell>
