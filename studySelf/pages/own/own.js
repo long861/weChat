@@ -86,5 +86,10 @@ Page({
       'isLink': detail.value
     })
 
+  },
+  change(e){
+    wx.switchTab({
+      url: '/pages/message/message'
+    })
   }
 })
