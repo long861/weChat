@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText":"Own",
+  "navigationBarBackgroundColor": "#ff5129",
+  "component": true,
+  "usingComponents": {
+    "i-panel": "../../dist/panel/index",
+    "i-cell-group": "../../dist/cell-group/index",
+    "i-cell": "../../dist/cell/index",
+    "i-icon": "../../dist/icon/index",
+    "i-switch": "../../dist/switch/index"
+  }
+}

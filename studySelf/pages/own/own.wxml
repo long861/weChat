@@ -1,0 +1,24 @@
+<!--pages/own/own.wxml-->
+<view class='own_wrap'>
+  <i-panel  class="cell-panel-demo">
+    <i-cell-group>
+        <i-cell title="个人信息" is-link url="./ownInfo"></i-cell>
+        <i-cell title="邮件信息" is-link url="/pages/message/message"></i-cell>
+        <i-cell title="动态" is-link url="/pages/mag/mag"></i-cell>
+        <i-cell title="卡卷" is-link url="./cardList"></i-cell>
+        <i-cell title="设置"></i-cell>
+        <block wx:if="{{isLink}}">
+            <i-cell title="单行列表" label="附加描述" value="详细信息"></i-cell>
+            <i-cell title="表单">
+                <input slot="footer" type="digit" placeholder="带小数点的数字键盘"/>
+            </i-cell>
+        </block>
+        <i-cell title="开关">
+            <i-switch value="{{isLink}}" bind:change="onChange" slot="footer">
+                <i-icon type="right" slot="open"></i-icon>
+                <i-icon type="close" slot="close"></i-icon>
+            </i-switch>
+        </i-cell>
+    </i-cell-group>
+</i-panel>
+</view>

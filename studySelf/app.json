@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/message/message",
+    "pages/own/own",
+    "pages/own/ownInfo",
+    "pages/own/cardList",
+    "pages/mag/mag"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#ff5129",
+    "list": [
+      {
+        "selectedIconPath": "image/index1.png",
+        "iconPath": "image/index.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "image/message1.png",
+        "iconPath": "image/message.png",
+        "pagePath": "pages/message/message",
+        "text": "动态"
+      },
+      {
+        "selectedIconPath": "image/own1.png",
+        "iconPath": "image/own.png",
+        "pagePath": "pages/own/own",
+        "text": "个人"
+      }
+    ]
+  }
+}
