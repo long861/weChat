@@ -67,6 +67,13 @@ Page({
         icon: 'undo'
       }
     ],
+    visible2: false,
+    actions2:[
+      {
+        name: '删除',
+        color: '#ed3f14'
+      }
+    ],
     toggle: false
   },
 
@@ -134,5 +141,35 @@ Page({
    */
   onShareAppMessage: function() {
 
+  },
+  handleCancel2() {
+    this.setData({
+      visible2: false,
+      toggle: this.data.toggle ? false : true
+    });
+    console.log(this.data.toggle, 111111111)
+  },
+  handleClickItem2() {
+    const action = [...this.data.actions2];
+    action[0].loading = true;
+
+    this.setData({
+      actions2: action
+    });
+
+    setTimeout(() => {
+      action[0].loading = false;
+      this.setData({
+        visible2: false,
+        actions2: action,
+        toggle: this.data.toggle ? false : true
+      });
+
+    }, 2000);
+  },
+  actionsTap() {
+    this.setData({
+      visible2: true
+    });
   }
 })
